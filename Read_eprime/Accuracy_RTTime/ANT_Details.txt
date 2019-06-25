@@ -1,0 +1,23 @@
+The alerting effect was calculated by subtracting the
+mean RT of the double-cue conditions from the mean
+RT of the no-cue conditions. (no_cue - center_cue)
+0	0	1	-1	0
+
+The conflict (executive control) effect was calculated
+by subtracting the mean RT of all congruent flanking
+conditions, summed across cue types, from the mean RT
+of incongruent flanking conditions. (Incongruent RT - Congruent RT)
+-1	1	0	0	0
+
+
+The orienting effect was calculated by subtracting the
+mean RT of the spatial cue conditions from the mean RT
+of the center cue. (center_cue - spatial_cue)
+
+0	0	0	1	-1
+
+Reference
+Jin Fan, Bruce D. McCandliss, Tobias Sommer,
+Amir Raz, and Michael I. Posner, Testing the Efficiency and Independence of
+Attentional Networks
+
