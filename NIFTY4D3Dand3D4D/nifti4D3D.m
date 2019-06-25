@@ -1,0 +1,1 @@
+abk_4Dto3D('swaFUNCTIONAL.nii')
