@@ -1,0 +1,1 @@
+$ find /home/data/studies/MOMEE/ -mindepth 2 -maxdepth 2 -type d -name "201610*" -exec bash -c 'nfiles=$( find {} -name "*PMatched*" -type f | wc -l ); if [ $nfiles -gt 1 ]; then echo {}; fi' \;

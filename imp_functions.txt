@@ -1,0 +1,7 @@
+str2num(cell2mat()  - to convert string in cell to number
+Better use cellfun(@str2num,x(1:end))
+
+cell2mat
+num2cell
+cellstr
+

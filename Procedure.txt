@@ -1,0 +1,33 @@
+1) Copy Data from Cluster Using WinSCP (Only the ones that is converted using mcvert)
+2) Use arrange_data.m to arrange the data in to task folders. The code deletes unnesesarry file. 
+3) Copy structural data to all folders 
+4) Run Preprocessing_batch
+5) Use dir /s /b *. > file_paths.txt in cmd to create list of folders
+6) Use folder_move.m to arrange the data in to task wise folders
+7) Use folder_mv_name_date.m to arrange the folders in taskwise folder according to name->date heirarchy
+8)Use Create_folder_list.m to generate list of all folders and compare with available eprime data (Create_files_list_in_a_folder.m)
+
+
+Behavioural
+9) Create .mat files with names onsets and condition. File name should have participant ID, and date in appropriate format (Yearmonthday) and copy those in to appropriate scan folders.Create a list of paths to the .mat (windows cmd: dir /b /s /a:-D *.mat >mat_file_paths.txt) conditions file and Use Copy_conditions_file_new_name.m for this.
+
+10) Run Initial first level spm using First_level_batch.m and geneate SPM.mat files for each time point using rp_func.txt as the mutilple regressor file. No need to estimate GLM and run contrast (that portion can be commented)
+
+
+11) ART: In the art_batch.m and art.m default parameters have been changed.
+Create a list of all SPM.mat files using dir /b /s /a:-D *SPM.mat > spm_mat_file_paths.txt
+Run Run_art_batch.m to generate art_config###.cfg and run those config files in batch mode
+This generates the art_regression_outliers_and_movement_sw##.mat and the SPM_outliers.txt with percentage outliers
+***
+TO be updated to incorporate physiological regressors
+***
+
+12)Rerun first level spm using First_level_batch.m and geneate new SPM.mat (overwrite/delete old ones) files for each time point using art_regression_outliers_and_movement_sw##.mat as the mutilple regressor file
+
+
+
+* Loop_through_folder_list.m - Use this to go through folderlist in text and create back up
+*
+
+
+13) Run second_level_batch.m

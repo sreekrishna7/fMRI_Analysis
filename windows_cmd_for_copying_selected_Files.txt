@@ -1,0 +1,8 @@
+where ext identifies the type of file you want to copy, and destination where you want it copied to. For instance, to copy all of your *.docx files to D:\alldocx, type 
+xcopy *name*.docx d:\alldocx /s.
+This Preserves the folder structure
+
+
+OR
+USE: 
+Robocopy Source_Folder_name Destination_Path A00.*Retaliation_Task_1.nii /E
