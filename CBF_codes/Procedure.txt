@@ -1,0 +1,2 @@
+1)Run CBF_Preprocessing.m
+2)Run Norm_ROI2T1.m
